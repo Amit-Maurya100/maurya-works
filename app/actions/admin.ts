@@ -5,7 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { ALL_SETTING_KEYS } from "@/lib/site-settings-keys";
 import { slugify } from "@/lib/utils";
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
+import { redirect } from "next/navigation" ;
 
 async function requireAuth() {
   const session = await auth();
